@@ -1,0 +1,19 @@
+meta {
+  name: Update User
+  type: http
+  seq: 5
+}
+
+put {
+  url: http://localhost:5000/api/users/{id}
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name" : "Scorpio",
+    "email": "admin@example.com",
+    "password": "123456"
+  }
+}

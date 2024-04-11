@@ -1,0 +1,24 @@
+meta {
+  name: ID User
+  type: http
+  seq: 7
+}
+
+get {
+  url: 
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGV4YW1wbGUuY29tIiwidXNlcklkIjoiNjYwZDIwY2M4YWY4YzViN2I4OTIxMzg1IiwiaWF0IjoxNzEyODExNDY0LCJleHAiOjE3MTI4OTc4NjR9.C83U2IlrsMF02Y_Y4MbMPuSr1JYSk0fcDsRboPVYGVM
+}
+
+body:json {
+  {
+    "name" : "Cancer",
+    "email": "admin@example.com",
+    "password": "123456"
+    "password_confirm": "111213"
+  }
+}

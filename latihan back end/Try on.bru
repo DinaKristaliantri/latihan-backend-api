@@ -1,0 +1,22 @@
+meta {
+  name: Try on
+  type: http
+  seq: 6
+}
+
+get {
+  url: http://localhost:5000/api/users
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGV4YW1wbGUuY29tIiwidXNlcklkIjoiNjYwZDIwY2M4YWY4YzViN2I4OTIxMzg1IiwiaWF0IjoxNzEyNzc1MzQ2LCJleHAiOjE3MTI4NjE3NDZ9.hmp9dWSxkDTo5Ejqi8m0QXFVGmy1bAhckV2i0lS1fRI
+}
+
+body:json {
+  {
+    "name" : "Scorpio",
+    "email": "admin@example.com"
+  }
+}

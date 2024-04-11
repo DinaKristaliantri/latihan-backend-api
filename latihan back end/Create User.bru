@@ -1,0 +1,24 @@
+meta {
+  name: Create User
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:5000/api/users
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGV4YW1wbGUuY29tIiwidXNlcklkIjoiNjYwZDIwY2M4YWY4YzViN2I4OTIxMzg1IiwiaWF0IjoxNzEyODEyMTU2LCJleHAiOjE3MTI4OTg1NTZ9.mPf0wcBpopRUxWGpbvNofgQIJIzond6Slo-mOHP4_v8
+}
+
+body:json {
+  {
+    "name": "Cancer",
+    "email": "Cancer@example.com",
+    "password": "123456",
+    "confirm_new_password" : "111213"
+  }
+}
